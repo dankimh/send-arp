@@ -182,7 +182,7 @@ int main(int argc, char* argv[]) {
             continue;
         }
 
-        sender.mac=Mac(sender_packet->eth_.smac());
+        sender.mac=Mac(sender_packet->arp_.smac());
         cout << "Sender's IP: " << string(sender.ip) << "\n";
         cout << "Sender's Mac: " << string(sender.mac) << "\n";
 
